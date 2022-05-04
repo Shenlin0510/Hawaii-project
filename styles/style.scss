@@ -1,0 +1,230 @@
+                    * {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        font-family: 'Noto Sans TC', sans-serif;
+                    }
+                    
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6 {
+                        font-weight: normal;
+                    }
+                    
+                    header {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        div.logo {
+                            display: flex;
+                            align-items: center;
+                            flex: 5 1 400px;
+                            margin-left: 2rem;
+                        }
+                        img {
+                            width: 7vw;
+                            height: 7vw;
+                        }
+                        nav {
+                            flex: 2 1 400px;
+                            ul {
+                                display: flex;
+                                list-style-type: none;
+                                justify-content: space-around;
+                                li {
+                                    a {
+                                        color: #09777d;
+                                        text-decoration: none;
+                                        font-size: 1.35rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    main {
+                        section.backImage {
+                            width: 100%;
+                            min-height: 95vh;
+                            background-size: cover;
+                            background-position: center;
+                            position: relative;
+                            z-index: 0;
+                            background-image: url("../Pictures/pexels-photo-416676.jpeg");
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            flex-direction: column;
+                            h3 {
+                                font-size: 3.5rem;
+                                color: beige;
+                            }
+                            button.start {
+                                background-color: #3df0e5;
+                                color: white;
+                                font-size: 2rem;
+                                margin: 1.8rem 2rem;
+                                padding: 0.6rem 0.6rem;
+                                border: none;
+                                border-radius: 0.4rem;
+                                cursor: pointer;
+                            }
+                            div.filter {
+                                background-color: rgba(0, 0, 0, 0.2);
+                                width: 100%;
+                                min-height: 95vh;
+                                position: absolute;
+                                top: 0;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                    
+                    section.second {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        h2 {
+                            margin: 2rem 0rem;
+                            font-size: 2rem;
+                        }
+                        span.exp {
+                            font-weight: bold;
+                        }
+                        section.cards {
+                            min-height: 80vh;
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 75%;
+                            div.card {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-around;
+                                flex: 1 1 300px;
+                                img {
+                                    width: 15vw;
+                                    height: 15vw;
+                                    border-radius: 50%;
+                                    margin: 2rem 0rem;
+                                }
+                                h4 {
+                                    font-size: 2rem;
+                                    margin: 2rem 0rem;
+                                }
+                                p {
+                                    font-size: 1.25rem;
+                                    padding: 0rem 1rem;
+                                }
+                                a {
+                                    text-decoration: none;
+                                    background-color: #09777d;
+                                    color: aliceblue;
+                                    font-size: 1.25rem;
+                                    border-radius: 10%;
+                                    padding: 0.8rem 0.8rem;
+                                    margin: 2rem 0rem;
+                                }
+                            }
+                        }
+                    }
+                    
+                    section.third {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        align-items: center;
+                        min-height: 40vh;
+                        justify-content: space-between;
+                        background-color: whitesmoke;
+                        div.logo {
+                            display: flex;
+                            align-items: center;
+                            img {
+                                width: 15vh;
+                                height: 15vh;
+                            }
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    
+                    nav.list {
+                        width: 30%;
+                        ul {
+                            display: flex;
+                            list-style-type: none;
+                            width: 100%;
+                            justify-content: space-around;
+                            flex-wrap: wrap;
+                            li {
+                                flex-basis: 100px;
+                                a {
+                                    text-decoration: none;
+                                    color: grey;
+                                    font-weight: 900;
+                                    font-size: 1.35rem;
+                                }
+                            }
+                        }
+                    }
+                    
+                    section.logo {
+                        display: flex;
+                        justify-content: space-between;
+                        a {
+                            margin: 0rem 1rem;
+                            img {
+                                width: 5vw;
+                                height: 5vw;
+                            }
+                        }
+                    }
+                    
+                    @media screen and(max-width:800px) {
+                        main {
+                            section.second {
+                                section.cards {
+                                    div.card {
+                                        img {
+                                            width: 50vw;
+                                            height: 50vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    @media screen and (max-width: 550px) {
+                        header {
+                            div.logo {
+                                margin-left: 0.5rem;
+                                img {
+                                    width: 15vw;
+                                    height: 15vw;
+                                }
+                                div ul {
+                                    flex-direction: column;
+                                }
+                            }
+                        }
+                        @media screen and (max-width: 550px) {
+                            section.third {
+                                section.logo {
+                                    a {
+                                        img {
+                                            width: 15vw;
+                                            height: 15vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
