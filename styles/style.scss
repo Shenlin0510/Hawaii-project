@@ -18,6 +18,11 @@
                             display: flex;
                             align-items: center;
                             flex-wrap: wrap;
+                            position: sticky;
+                            top: 0;
+                            z-index: 5;
+                            background-color: azure;
+                            box-shadow: 3px 3px 5px 1px rgba(29, 28, 28, 0.2);
                             div.logo {
                                 display: flex;
                                 align-items: center;
@@ -64,8 +69,9 @@
                                     color: beige;
                                 }
                                 button.start {
-                                    background-color: #3df0e5;
-                                    color: white;
+                                    background-color: #17c6ba;
+                                    color: black;
+                                    font-weight: 400;
                                     font-size: 2rem;
                                     margin: 1.8rem 2rem;
                                     padding: 0.6rem 0.6rem;
@@ -167,7 +173,7 @@
                                     flex-basis: 100px;
                                     a {
                                         text-decoration: none;
-                                        color: grey;
+                                        color: black;
                                         font-weight: 900;
                                         font-size: 1.35rem;
                                     }
@@ -185,6 +191,21 @@
                                     height: 5vw;
                                 }
                             }
+                        }
+                        /* width */
+                        
+                         ::-webkit-scrollbar {
+                            width: 10px;
+                        }
+                        /* Track */
+                        
+                         ::-webkit-scrollbar-track {
+                            background: #f1f1f1;
+                        }
+                        /* Handle */
+                        
+                         ::-webkit-scrollbar-thumb {
+                            background: #09777d;
                         }
                         
                         @media screen and(max-width:800px) {
